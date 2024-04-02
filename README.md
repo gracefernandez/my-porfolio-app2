@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 #Dependencies 
 In terminal you can run some of all these dependencies to make sure the project run correctly. 
-### 'npm install react bootstrap bootstrap'
+### `npm install react bootstrap bootstrap`
 
 ### `npm install react-bootsrap-icons`
 
