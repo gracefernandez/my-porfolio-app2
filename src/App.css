@@ -115,6 +115,7 @@ span.navbar-text {
     align-items: center;
 }
 .social-icon {
+    margin-top: 30px;
     display: inline-flex;
     align-items: center;    
     margin-left: 14px;
@@ -265,7 +266,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
-}
+} 
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -304,7 +305,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 120px 0 50px 0;
   position: relative;
 }
 .skill-bx {
@@ -343,6 +344,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+.project-description-section {
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+  background-color: #060404;
+}
+.project-description-section h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.project-description-section img {
+justify-content: centerproj-imgbx ;}
 .project {
   padding: 80px 0;
   position: relative;
@@ -353,7 +367,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
   text-align: center;
 }
-.project p {
+.project p  {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -361,6 +375,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+}
+.project h5{
+   color: #B8B8B8;
 }
 .project .nav.nav-pills {
   width: 72%;
@@ -415,11 +432,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+.proj-imgbx0 {
+  display: flex;
+  justify-content: center; 
+  margin: 20px;
+}
 .proj-imgbx {
+  margin: 10px;
+  height: 300px;
   position: relative;
+  align-items: center;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  color: #fff;
+}
+.align-items-center {
+    display: flex;
+    align-items: center;
+  
 }
 .proj-imgbx::before {
   content: "";
@@ -430,6 +461,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
+
 .proj-imgbx:hover::before {
   height: 100%;
 }
@@ -468,6 +500,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+/***********About Me ************/
+.aboutme {
+  padding: 80px 0;
+  margin: 2rem;
+  text-align: center;
+
+}
+.background-image-about {
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  width: 60%;
+  z-index: -10;
+}
+
+.aboutme h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  
+
+}
+.aboutme h2{
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.aboutme p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+
+}
+
+.a
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);

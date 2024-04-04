@@ -6,41 +6,36 @@ import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import ProjectDescription from "./ProjectDescription";
 
 export const Projects = () => {
 
-  const projects = [
+  const project1 = 
     {
+      imgUrl: projImg1,
+      title: "Business Startup",
+      role: "Design & Development",
+      company: "Company Name",
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+
+    }
+    const project2 =
+   {
+      title: "Business Test",
+      description: "Design & Development",
+      // imgUrl: projImg2,
+    }
+
+    const project3 =
+     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: "https://cloud-elements.com/wp-content/uploads/2019/01/github-logo-6004.jpg",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: "projImg2",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: "projImg3",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: "projImg1",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: "projImg2",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: "projImg3",
-    },
-  ];
+      imgUrl: projImg3,
+    }
+
+  const title = "Business Startup";
+  const role = "Design & Development";
+  const description = "This is a project description lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum ligula sit amet, posuere turpis. Nulla facilisi";
 
   return (
     <section className="project" id="projects">
@@ -51,39 +46,42 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h5 style={{textAlign:"center", margin:"15px"}}>Here are some of outstanding projects and latest experience </h5>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Project 1</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Project 2</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Project 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
+                              <div>                                
+                                <ProjectDescription {...project1}/>
+                              </div>
+                       
                         }
                       </Row>
+
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
+                    <Row>
+                              <div>                                
+                                <ProjectDescription {...project2}/>
+                              </div>
+                      </Row>                    </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                             <div>                                
+                                <ProjectDescription {...project3}/>
+                             </div>
+                  
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
