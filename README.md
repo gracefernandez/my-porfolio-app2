@@ -2,6 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Dependencies 
+In terminal you can run some of all these dependencies to make sure the project run correctly. 
+### `npm install react bootstrap bootstrap`
+
+### `npm install react-bootsrap-icons`
+
+### `npm install react-on-screen`
+
+### `npm install react-multi-carousel --save `
+
+### `npm install animate.css`
+
+### `npm install react-mailchimp-subscribe`
+
+
 ## Available Scripts
 
 In the project directory, you can run:
