@@ -82,6 +82,110 @@ p.success {
 p.danger {
 	color: red;
 }
+
+/************ Login Css ************/
+.login {
+  text-align: center;
+  /* background-image:  '../assets/img/color-sharp.png'; */
+}
+.box-bg {
+  /* border-radius: 55px;
+  margin-bottom: 80px; */
+  color: #121212;
+  height: 15rem;
+
+}
+.box-bg2 {
+  /* border-radius: 55px;
+  margin-bottom: 80px; */
+  color: #121212;
+  height: 40rem;
+
+}
+.login h2 {
+
+  font-size: 30px;
+	font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+.login-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* background: rgba(184, 184, 184, 0.393); */
+  border-radius: 35px;
+  /* padding: 85px 125px; */
+  margin-bottom: 80px;
+  color: white;
+}
+.login-box2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* background: rgba(184, 184, 184, 0.393); */
+  border-radius: 35px;
+  padding: 85px 125px;
+  margin-bottom: 80px;
+  color: white;
+}
+
+
+.l-form{
+  margin-top: 20px;
+  margin-bottom: 20px ;
+
+}
+.l-form input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.l-form input:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+
+.l-form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.l-form button:hover {
+  color: #ffffff;
+  background-color: #000;
+
+}
+
+.l-form p {
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 30px auto 30px auto;
+
+  /* width: 56%; */
+
+}
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;

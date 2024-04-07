@@ -1,4 +1,4 @@
-import profilePic from "../assets/img/grace-profile.png";
+import profilePic from "../assets/img/grace-bw.png";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const AboutMe = (profileText, Name, Lastname , email, ) => {

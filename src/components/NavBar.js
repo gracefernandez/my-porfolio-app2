@@ -1,5 +1,5 @@
 import React, { useEffect , useState } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav,  } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../assets/img/GfLogo.png";
 import navIcon1 from "../assets/img/nav-icon1.svg";
@@ -49,7 +49,7 @@ export const  NavBar = () => {
 
     <Navbar expand="lg" className= {scrolled ? "scrolled" : ""} >
     <Container id="navbar-top">
-      <Navbar.Brand href="#home"><img src={logo} width={200} height={200}  alt= "Logo" /> </Navbar.Brand>
+      <Navbar.Brand href="/"><img src={logo} width={200} height={200}  alt= "Logo" /> </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto" id="navbar-auto">
